@@ -867,7 +867,7 @@ function closeModal(){
 }
 .phone-card:hover{transform:translateY(-6px)}
 .phone-frame{
-  width:100%;max-width:220px;height:380px;
+  width:100%;max-width:220px;
   background:#1a1a2e;border-radius:28px;
   border:6px solid #2a2a45;
   box-shadow:0 20px 48px rgba(0,60,160,.2),0 4px 16px rgba(0,0,0,.15);
@@ -879,7 +879,7 @@ function closeModal(){
   display:flex;align-items:center;justify-content:center;
 }
 .phone-notch-bar::after{content:'';width:48px;height:8px;background:#000;border-radius:99px}
-.phone-video{flex:1;width:100%;object-fit:cover;display:block}
+.phone-video{width:100%;height:auto;display:block;flex-shrink:0}
 .phone-card:hover .phone-frame{
   border-color:var(--blue);
   box-shadow:0 24px 56px rgba(0,122,255,.3),0 4px 16px rgba(0,0,0,.2);
@@ -934,7 +934,7 @@ function closeModal(){
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 UX/UI Designer Portfolio · Crafted with ♥ in Bangkok · <a href="#home">↑ กลับด้านบน</a></p>
+  <p>© 2026 UX/UI Designer Portfolio · Crafted with ♥ in Bangkok · <a href="#home">↑ Back to Top</a></p>
 </footer>
 
 </body>

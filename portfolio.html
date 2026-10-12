@@ -301,7 +301,7 @@ nav:hover{box-shadow:0 4px 24px rgba(0,122,255,.06)}
 .skills-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 .skill-card{
   background:var(--card);border:1px solid rgba(255,255,255,.06);
-  border-radius:20px;padding:28px;
+  border-radius:14px;padding:14px;
   transition:transform .25s,border-color .25s;
   position:relative;overflow:hidden;
 }
@@ -311,10 +311,10 @@ nav:hover{box-shadow:0 4px 24px rgba(0,122,255,.06)}
   pointer-events:none;
 }
 .skill-card:hover{transform:translateY(-4px);border-color:rgba(0,122,255,.25)}
-.skill-icon{width:40px;height:40px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;background:rgba(0,122,255,.1);border-radius:10px;border:1px solid rgba(0,122,255,.15)}
-.skill-icon svg{width:20px;height:20px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.skill-name{color:#fff;font-weight:700;font-size:15px;margin-bottom:16px;letter-spacing:-.2px}
-.skill-track{height:4px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;margin-bottom:10px}
+.skill-icon{width:28px;height:28px;margin-bottom:8px;display:flex;align-items:center;justify-content:center;background:rgba(0,122,255,.1);border-radius:8px;border:1px solid rgba(0,122,255,.15)}
+.skill-icon svg{width:14px;height:14px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.skill-name{color:#fff;font-weight:700;font-size:13px;margin-bottom:8px;letter-spacing:-.2px;min-height:17px;display:flex;align-items:center}
+.skill-track{height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;margin-bottom:6px}
 .skill-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
 .skill-pct{font-size:12px;color:rgba(0,198,255,.6);font-weight:600}
 
@@ -662,28 +662,34 @@ nav:hover{box-shadow:0 4px 24px rgba(0,122,255,.06)}
     </div>
     <div class="skills-grid">
       <div class="skill-card">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" style="stroke-width:1.6"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 0 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg></div>
+        <div class="skill-name">Figma</div>
+        <div class="skill-track"><div class="skill-fill" style="width:100%"></div></div>
+        <div class="skill-pct">100%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="skill-name">UX Design</div>
+        <div class="skill-track"><div class="skill-fill" style="width:88%"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+      <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
         <div class="skill-name">UI Design</div>
         <div class="skill-track"><div class="skill-fill" style="width:95%"></div></div>
         <div class="skill-pct">95%</div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="skill-name">UX Research</div>
-        <div class="skill-track"><div class="skill-fill" style="width:88%"></div></div>
-        <div class="skill-pct">88%</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><svg viewBox="0 0 24 24" style="stroke-width:1.6"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 0 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg></div>
-        <div class="skill-name">Figma</div>
-        <div class="skill-track"><div class="skill-fill" style="width:96%"></div></div>
-        <div class="skill-pct">96%</div>
-      </div>
-      <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><rect x="5" y="6" width="6" height="4" rx="1"/><rect x="13" y="6" width="6" height="2" rx="1"/><rect x="13" y="10" width="4" height="2" rx="1"/><rect x="5" y="12" width="14" height="2" rx="1"/><path d="M8 21h8M12 17v4"/></svg></div>
         <div class="skill-name">Wireframing</div>
         <div class="skill-track"><div class="skill-fill" style="width:90%"></div></div>
         <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M8 12l2 2 4-4"/></svg></div>
+        <div class="skill-name">Journey Mapping</div>
+        <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
+        <div class="skill-pct">85%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="8" height="8" rx="2"/><rect x="14" y="2" width="8" height="8" rx="2"/><rect x="2" y="14" width="8" height="8" rx="2"/><rect x="14" y="14" width="8" height="8" rx="2"/></svg></div>
@@ -708,12 +714,6 @@ nav:hover{box-shadow:0 4px 24px rgba(0,122,255,.06)}
         <div class="skill-name">Photoshop</div>
         <div class="skill-track"><div class="skill-fill" style="width:82%"></div></div>
         <div class="skill-pct">82%</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M8 12l2 2 4-4"/></svg></div>
-        <div class="skill-name">Adobe XD</div>
-        <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
-        <div class="skill-pct">85%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
